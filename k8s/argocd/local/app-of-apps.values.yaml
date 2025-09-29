@@ -3,3 +3,7 @@ chartVersions:
   wbaasApi: 0.33.0
   redis: 17.3.8
   redis2: 19.6.4
+
+repoUrls:
+  deploy: https://github.com/deer-wmde/debug-wbaas-deploy
+  wbstack: https://deer-wmde.github.io/debug-charts
