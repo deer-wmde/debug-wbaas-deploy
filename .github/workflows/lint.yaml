@@ -13,4 +13,4 @@ jobs:
       - name: Check if Opentofu files are properly formatted
         run: tofu fmt -recursive -check tf
       - name: Check Shell scripts
-        uses: bewuethr/shellcheck-action@v2.3.0
+        run: find . -type f -name "*.sh" -exec shellcheck {} +
