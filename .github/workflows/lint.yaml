@@ -16,4 +16,4 @@ jobs:
         run: tofu fmt -recursive -check tf
 
       - name: Check Shell scripts
-        run: ./bin/run-shellcheck
+        run: ./bin/run-shellcheck --version
