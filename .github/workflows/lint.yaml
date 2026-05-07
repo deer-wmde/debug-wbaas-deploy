@@ -6,11 +6,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
       - name: Lint YAML files
         uses: ibiqlik/action-yamllint@v3
+
       - name: Install Opentofu
         uses: opentofu/setup-opentofu@v1
       - name: Check if Opentofu files are properly formatted
         run: tofu fmt -recursive -check tf
+
       - name: Check Shell scripts
-        run: find . -type f -name "*.sh" -exec shellcheck {} +
+        run: ./bin/run-shellcheck
