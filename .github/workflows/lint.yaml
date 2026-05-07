@@ -23,7 +23,4 @@ jobs:
           sudo cp "shellcheck-$VERSION/shellcheck" /usr/bin/
 
       - name: Check Shell scripts
-        run: shellcheck --version
-
-      - name: Check Shell scripts 2
-        run: ./shellcheck --version
+        run: ./bin/run-shellcheck
