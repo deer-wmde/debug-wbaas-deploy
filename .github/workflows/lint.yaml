@@ -14,4 +14,3 @@ jobs:
         run: tofu fmt -recursive -check tf
       - name: Check Shell scripts
         uses: bewuethr/shellcheck-action@v2
-
