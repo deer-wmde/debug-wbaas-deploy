@@ -22,5 +22,7 @@ jobs:
           tar -xf "shellcheck-$VERSION.linux.x86_64.tar.xz"
           sudo cp "shellcheck-$VERSION/shellcheck" /usr/bin/
 
+      - name: Extract Shell scripts from YAML k8s jobs
+        run: ./bin/extract-shell-scripts
       - name: Check Shell scripts
         run: ./bin/run-shellcheck
