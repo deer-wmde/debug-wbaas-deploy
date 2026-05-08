@@ -10,5 +10,5 @@ find . \
 	-or \
 	-name '*.sh' -or -name '*.bash' -or -name '*.ksh' \
 	\) \
-	-exec docker run --rm -it -v "$(pwd):/mnt" koalaman/shellcheck:v0.11.0 {} +
+	-exec docker run --rm -t -v "$(pwd):/mnt" koalaman/shellcheck:v0.11.0 {} +
 
