@@ -94,8 +94,7 @@ releases:
 
   - name: argocd-config
     namespace: argocd
-    chart: wbstack/argocd-config
-    version: 2.2.0
+    chart: git::https://github.com/deer-wmde/debug-charts.git@charts/argocd-config?ref=b3233f46826d4b03f162b6f9a19b4ada1cf52149
     <<: *default_release
 
   - name: redirects
